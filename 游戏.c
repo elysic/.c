@@ -1,4 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<time.h>
+#include<stdlib.h>
 //void menu()
 //{
 //	printf("---------------------------------------------------\n");
@@ -62,4 +65,16 @@
 //}
 //printf("初始属性输入完毕！\n");
 //printf("颜值：%d，体质：%d，智力：%d，家境：%d\n", face, strong, iq, home);
+//
+//srand((unsigned int)time(NULL));
+//int sex = rand() % 2;
+//if (sex == 1)
+//{
+//	printf("你是个男孩.\n");
+//}
+//else
+//{
+//	printf("你是个女孩.\n");
+//}
+
 //}
