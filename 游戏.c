@@ -76,5 +76,74 @@
 //{
 //	printf("你是个女孩.\n");
 //}
+int point = rand() % 3;
+//第一档
+if (home == 10)
+{
+	printf("你出生在帝都，你的父母是高管政要.\n");
+	home += 1;
+	iq += 1;
+	face += 1;
+}
+//第二档
+else if (home <= 9 && home >= 7)
+{
+	if (point == 1)
+	{
+		printf("你出生在大城市，你的父母是公务员.\n");
+		face += 2;
+	}
+	else if (point == 2)
+	{
+		printf("你出生在大城市，你的父母是企业高管.\n");
+		home += 2;
+	}
+	else
+	{
+		printf("你出生在大城市，你的父母是大学教授.\n");
+		iq += 2;
+	}
+}
+//第三档
+else if (home <= 6 && home >= 4)
+{
+	if (point == 1)
+	{
+		printf("你出生在三线城市，你的父母是医生.\n");
+		strong += 1;
+	}
+	else if (point == 2)
+	{
+		printf("你出生在镇上，你的父母是老师.\n");
+		iq += 1;
+	}
+	else
+	{
+		printf("你出生在镇上，你的父母是个体户.\n");
+		home += 1;
+	}
+}
+//第四档
+else
+{
+	if (point == 1)
+	{
+		printf("你出生在农村，你的父母是辛苦劳作的农民.\n");
+		strong += 1;
+		face -= 2;
+	}
+	else if (point)
+	{
+		printf("你出生在穷乡僻壤，你的父母是无业游民.\n");
+		home -= 1;
+	}
+	else
+	{
+		printf("你出生在镇上,你的父母感情不和.\n");
+		strong -= 1;
+	}
+}
+printf("颜值：%d，体质：%d，智力：%d，家境：%d\n", face, strong, iq, home);
+
 
 //}
