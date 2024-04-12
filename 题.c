@@ -1,31 +1,45 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <stdlib.h>
-int main()
-{
-    int a, b, x, y, c;
-    printf("输入一个分式：");
-    scanf("%d/%d", &a, &b);
-    if (a < b)
-    {
-        x = b;
-        y = a;
-    }
-    else
-    {
-        x = b;
-        y = a;
-    }
-    c = x % y;
-    while (c)
-    {
-        x = y;
-        y = c;
-        c = x % y;
-    }
-    if (b / y != 1)
-        printf("最简分式为：%d/%d", a / y, b / y);
-    else
-        printf("最简分式为：%d", a / y);
-    return 0;
-}
+#include<stdio.h>
+
+//说出某一天是这一年的第几天
+//int main()
+//{
+//	int day, month, year;
+//	printf("please input year month day\n");
+//	scanf("%d,%d,%d", &year, &month, &day);
+//	int sum = 0;
+//	switch (month)
+//	{
+//	case 1:printf("1yue\n"); sum = 0; break;
+//	case 2:printf("2yue\n"); sum = 31; break;
+//	case 3:printf("3yue\n"); sum = 59; break;
+//	default:printf("holiday\n"); break;
+//	}
+//	if (year % 4 == 0 && year % 100 == 0)
+//	{
+//		if (month > 2)
+//		{
+//			sum++;
+//		}
+//	}
+//	sum = sum + day;
+//	printf("总天数为：%d\n", sum);
+//	return(0);
+//}
+// 
+// 99乘法表
+//int main()
+//{
+//	int i ,a;
+//	for (i = 1; i < 10; i++)
+//	{
+//		for (a = 1; a <= i; a ++ )
+//		{
+//			printf("%2d*%d=%2d",a,i, a * i);
+//			printf(" ");
+//			
+//		}
+//		printf("\n");
+//	}
+//	return(0);
+//}
